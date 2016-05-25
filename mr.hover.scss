@@ -140,3 +140,21 @@
     top: 1px;
   }
 }
+
+@mixin hvr-8($baseColor, $hoverColor) {
+  position: relative;
+  color: $baseColor;
+  &:after {
+    overflow: hidden;
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    max-width: 0;
+    color: $hoverColor;
+    width: 100%;
+    transition: all .25s;
+  }
+  &:hover:after {
+    max-width: 100%;
+  }
+}
