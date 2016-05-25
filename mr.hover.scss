@@ -1,12 +1,13 @@
 // With Arguments
 
-@mixin bottomLineAnim($size, $color, $time, $ease) {
+@mixin hvr-1($direction: left, $size: 3px, $color: #333, $time: .25s, $ease: linear) {
   position: relative;
   &:after {
     position: absolute;
     content: "";
     bottom: -1px;
-    left: 0;
+    @if $direction == 'left' { left: 0; }
+    @if $direction == 'right' { right: 0; }
     width: 0%;
     border-bottom: $size solid $color;
     -webkit-transition: all $time, $ease;
@@ -18,14 +19,14 @@
     }
   }
 
-@mixin hoverLink($color, $time, $ease){
+@mixin hvr-2($color, $time, $ease){
   transition: all .25s linear;
   &:hover {
     color: red;
   }
 }
 
-@mixin shiftLink($direction, $leftDistance: 5px, $rightDistance: -5px) {
+@mixin hvr-3($direction, $leftDistance: 5px, $rightDistance: -5px) {
   $left:  $leftDistance;
   $right: $rightDistance;
   transition: all .25s linear;
@@ -41,7 +42,7 @@
 }
 
 
-@mixin bracketfx($l-char: "[", $r-char: "]" ) {
+@mixin hvr-4($l-char: "[", $r-char: "]" ) {
   &:before, &:after {
     opacity: 0; // change this to 0
     display: inline-block;
@@ -65,7 +66,7 @@
   }
 }
 
-@mixin blineAnim($color: #ccc, $thickness: 2px) {
+@mixin hvr-5($color: #ccc, $thickness: 2px) {
   position: relative;
   text-decoration: none;
     &:after {
@@ -85,7 +86,7 @@
     }
 }
 
-@mixin blineAnim-2($color: #ccc, $thickness: 2px) {
+@mixin hvr-6($color: #ccc, $thickness: 2px) {
   position: relative;
   text-decoration: none;
     &:after {
@@ -107,7 +108,7 @@
     }
 }
 
-@mixin linesAnim($color: #ccc, $thickness: 2px) {
+@mixin hvr-7($color: #ccc, $thickness: 2px) {
   position: relative;
   text-decoration: none;
   &:before, &:after {
