@@ -13,6 +13,7 @@ All Mixins can be used with or without arguments.
 - hover-5(color, thickness)
 - hover-6(color, thickness) 
 - hover-7(color, thickness)
+- hover-8(baseColor, HoverColor)
 
 ##Setup
 
