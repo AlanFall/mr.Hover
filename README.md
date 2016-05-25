@@ -1,11 +1,13 @@
 # mr.Hover
 
-Mr.Hover is a set of nice hover effects for links using simple yet beautiful transitions.
+Mr.Hover is a set of subtle hover effects that can be used to style your links.
 
 ##Mixins List
 
-- bottomLineAnim($size, $color, $time, $ease)
-- hoverLink($color, $time, $ease)
+###All Mixins can be used with or without arguments.
+
+- bottomLineAnim(size, color, time, ease)
+- hoverLink(color, time, ease)
 - shiftLink($direction, $leftDistance: 5px, $rightDistance: -5px)
 - bracketfx($l-char: "[", $r-char: "]" )
 - blineAnim($color: #ccc, $thickness: 2px)
