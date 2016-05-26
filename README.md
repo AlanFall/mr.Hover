@@ -6,7 +6,7 @@ Mr.Hover is a SASS based set of subtle hover effects that you can use to style y
 
 All Mixins can be used with or without arguments.
 
-- hover-1($direction, $size, $color, $time, $ease)
+- hover-1(direction, size, color, time, ease)
 - hover-2(color, time, ease)
 - hover-3(direction, leftDistance, rightDistance)
 - hover-4(l-char, r-char)
