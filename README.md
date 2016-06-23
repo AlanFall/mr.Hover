@@ -21,4 +21,4 @@ Just load mr.hover.scss file to your project or copy a mixin and paste it to you
 
 ##Demo Page
 
-Visit the demo page. You can also copy a mixin imediatelly from there.
+Visit the demo page. You can also copy a mixin imediatelly from there: www.digital-grief.com/mrhover
